@@ -1,0 +1,20 @@
+
+ajay 
+
+giit
+
+insert into zzvalue();
+execute immediate vquery ;
+insert into zzvalue();
+execute immediate vquery;
+insert into zzvalue();
+   execute immediate vquery  ;
+
+insert into zzvalue();
+execute immediate vquery  
+;
+from hi0718001.hr_tb_ss a;
+hI0718001.hi_rx_cignf
+/hI0718001.hi_rx_cignf
+
+;

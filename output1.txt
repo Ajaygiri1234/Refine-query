@@ -1,0 +1,16 @@
+
+ajay 
+
+giit
+
+execute immediate vquery ;
+execute immediate vquery;
+   execute immediate vquery  ;
+
+execute immediate vquery  
+;
+from hi0718001.hr_tb_ss a;
+hI0718001.hi_rx_cignf
+/hI0718001.hi_rx_cignf
+
+;

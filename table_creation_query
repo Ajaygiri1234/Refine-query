@@ -1,0 +1,3 @@
+create table as select * from hi0718oo1.a where 1=1;
+create table as select * from hi0718oo1.b where 1=1;
+create table as select * from hi0718oo1.c where 1=1
