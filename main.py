@@ -11,9 +11,11 @@ def remove_text_after_double_dash(file_path):
     # Step 2: Process each line to remove text after '--'
     processed_lines = []
     for line in lines:
-        if '--' in line:
+        if '--' in line :
             # Split the line at '--' and take the part before it
             processed_line = line.split('--')[0]
+            if "'" in line:
+                processed_line = processed_line + "'"
             processed_lines.append(processed_line + '\n')  # Add newline back to maintain line breaks
         else:
             processed_lines.append(line)
@@ -35,13 +37,17 @@ def replace_execute_immediate(file_path):
     
     # Step 2: Process each line to replace the specific line using regex
     new_lines = []
-    pattern = re.compile(r'^\s*execute\s+immediate\s+vquery\s*', re.IGNORECASE)
-    replacement = 'insert into zzvalue();\n'
+    pattern1 = re.compile(r'^.*execute\s+immediate\s+vquery\s*', re.IGNORECASE)
+    pattern2 = re.compile(r'^.*execute\s+immediate\s+vbquery\s*', re.IGNORECASE)
+    replacement1 = 'insert into zzvalue();\n'
+    replacement2 = 'insert into zzvalue(2);\n'
     
     for line in lines:
         
-        if pattern.match(line):
-            new_lines.append(replacement)
+        if pattern1.match(line):
+            new_lines.append(replacement1)
+        if pattern2.match(line):
+            new_lines.append(replacement2)
        
         new_lines.append(line)
     

@@ -1,4 +1,7 @@
 
+'
+'
+'
 ajay 
 
 giit
@@ -8,7 +11,7 @@ execute immediate vquery ;
 insert into zzvalue();
 execute immediate vquery;
 insert into zzvalue();
-   execute immediate vquery  ;
+begin execute immediate vquery  ;
 
 insert into zzvalue();
 execute immediate vquery  
@@ -16,5 +19,15 @@ execute immediate vquery
 from hi0718001.hr_tb_ss a;
 hI0718001.hi_rx_cignf
 /hI0718001.hi_rx_cignf
-
+'
 ;
+
+insert into zzvalue(2);
+execute immediate vbquery ;
+insert into zzvalue(2);
+execute immediate vbquery;
+insert into zzvalue(2);
+begin execute immediate vbquery  ;
+
+insert into zzvalue(2);
+execute immediate vbquery  
